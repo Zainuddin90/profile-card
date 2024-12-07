@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --extra-light: #f3f4f6;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Nunito sans';
+}
+
+.card {
+
+    background-color: var(--extra-light);
+    position: relative;
+    height: 400px;
+    margin-bottom: 4rem;
+}
+
+.card .image {
+
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 8px solid white;
+    transform: translate(-50%, -30%);
+    overflow: hidden;
+}
+
+.card img {
+
+    width: 100%;
+
+}
+
+
+.content {
+
+    max-width: 600px;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.content h1 {
+
+    font-size: 3.4rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: var(--text-dark);
+    letter-spacing: 1px;
+}
+
+.subhead {
+
+    font-size: 1rem;
+    color: #242424;
+    margin-bottom: 2px;
+    font-weight: 300;
+
+}
+
+.para {
+
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 1.5rem 0;
+}
+
+.btn {
+
+    background-color: transparent;
+    border: none;
+    color: var(--text-light);
+    font-size: 0, 9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover{
+
+    color: var(--text-dark);
+}
+
+@media  screen and (width < 500px) {
+
+    .card{
+
+        height: 300px;
+        margin-bottom: 3rem;
+    }
+
+    .card .image {
+
+        width: 300px;
+        height: 300px;
+    }
+
+    .content h1{
+
+        font-size: 2rem;
+    }
+    
+}
